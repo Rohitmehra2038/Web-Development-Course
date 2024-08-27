@@ -1,0 +1,34 @@
+<html>
+    <head>
+        <title></title>
+    </head>
+    <body>
+        Please enter your no.
+        <br>
+        <input type="text" name="" id="" onkeyup="val(this)">
+        <div id="res"></div>
+        
+    </body>
+    <script type="text/javascript">
+        document.getElementById("res").style.color = "red"
+        function val(elem){
+         //   document.getElementById('res').innerText= elem.value;
+         //isNaN = not a no.
+         if(isNaN(elem.value)){
+            document.getElementById('res').innerText= "Please Enter no. only";
+           // alert("Not a no.");
+         }
+         else{
+            document.getElementById('res').innerText= "";
+            if(elem.value.length >10){
+                document.getElementById('res').innerText= "Please Enter only 10 digits";
+            } else{
+                document.getElementById('res').innerText= "";
+            }
+           // alert("Its a no.");
+         }
+
+        }
+
+    </script>
+</html>

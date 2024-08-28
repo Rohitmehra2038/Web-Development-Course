@@ -37,32 +37,35 @@
         </p>
         <p>
             <label for="username">Username</label>
-            <input type="text" name="username" id="username" placeholder="Username" onkeyup="white(this.value)">
+            <input type="text" name="username" id="username" placeholder="Username" onkeyup="white(this.value)"/>
         </p>
         <p>
             <label for="password">Password</label>
-            <input type="password" id="password" name="password" id="password">
+            <input type="password" id="password" name="password" id="password" onkeyup="white(this.value)">
         </p>
         <p>
             <label for="confirm_password">Confirm Password</label>
-            <input type="password" name="confirm_password" id="confirm_password" onkeyup="check(this)">
-            <error id="alert-caps"></error>
+            <input type="password" name="confirm_password" id="confirm_password" onkeyup="check(this)"/>
+           <!-- <error id="alert-caps"></error> -->
         </p>
         <p>
-            <input type="submit" name="" id="submit" value="submit">
+            <error id="alert-caps"></error>
+            <input type="submit" name="" id="submit" value="submit"/>
         </p>
     </form>
     
 </body>
 <script type="text/javascript">
-    var patten = /\s/g;
-    var alert = document,getElementById('alert-caps');
+    var patten =   s/g;
+    var alert = document.getElementById('alert-caps');
+
     function white(data){
         var isSpace = patten.test(data);
         if(isSpace){
-            alert.innerText = "Space is not allow"
+            alert.innerText='Space is not allow';
 
         }else{
+            alert.innerText = "";
 
         }
     }

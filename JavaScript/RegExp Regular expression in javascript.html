@@ -1,0 +1,76 @@
+Regular expression is an object that describe  a pattern of characters.
+Regular expressions are used to perform pattern matching and "search-and-replace"functions of text.
+
+syntax : /pattern/mofidiers;
+or 
+new RegExp(pattern,mofidiers);
+
+example : 
+var pattern = /name/i
+var pattern = new RegExp('name''i')
+
+exec() = Tests for a match in string. Returns the first match.
+test() = Tests for match in a string. Returns true or false.
+tostring() = Returns the string value of the regular expression.
+Regex101.com
+
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>RegExp</title>
+</head>
+<body>
+    
+</body>
+<script type="text/javascript">
+    var pattern=/[a-z][0-9]+/ig;
+    var str = "Welcome12345";
+    console.log(pattern.exec(str));
+</script>
+</html>
+
+
+<br>
+<br>
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>RegExp</title>
+</head>
+<body>
+    
+</body>
+<script type="text/javascript">
+  //  var pattern=/[a-z][0-9]+/ig;
+  var pattern= new RegExp('[a-z][0-9]','ig');
+    //var str = "Welcome12345";
+    console.log(pattern.toString());
+</script>
+</html>
+
+
+<br>
+<br>
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>RegExp</title>
+</head>
+<body>
+    
+</body>
+<script type="text/javascript">
+   var pattern=/[a-z][0-9]+/ig;
+  //var pattern= new RegExp('[a-z][0-9]','ig');
+    var str = "Welcome12345";
+    console.log(pattern.toString());
+</script>
+</html>
